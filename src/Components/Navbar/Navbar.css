@@ -1,0 +1,136 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    width: 230px;
+    height: 48px;
+  }
+  
+  .navbar-middle {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-bar {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .navbar-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+    margin-right: 70px;
+  }
+  
+  .navbar-right div {
+    cursor: pointer;
+    font-size: 21px;
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .navbar-right div:hover {
+    color: #007BFF;
+  }
+
+  .profile-icon svg {
+    font-size: 30px; /* Adjust this value to change the size */
+    color: #333;     /* Optional: Change the icon color if needed */
+    margin-top: 11px;
+  }
+  
+  .profile-icon svg:hover {
+    color: #007BFF; /* Optional: Add a hover effect */
+  }
+  .cart-icon svg
+  {
+    font-size: 30px; /* Adjust this value to change the size */
+    color: #333;     /* Optional: Change the icon color if needed */
+    margin-top: 11px;
+  }
+  .cart-icon svg:hover {
+    color: #007BFF; /* Optional: Add a hover effect */
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-middle {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .navbar-right {
+      justify-content: space-around;
+      width: 100%;
+    }
+  
+    .search-bar {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar-right {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .search-input {
+      font-size: 14px;
+      padding: 8px 35px 8px 10px;
+    }
+  
+    .search-icon {
+      font-size: 18px;
+    }
+  }
+  
